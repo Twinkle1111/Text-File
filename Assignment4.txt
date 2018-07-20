@@ -1,0 +1,55 @@
+EMPLOYEE CLASS:
+Here we declare all variables 
+we have implemented toString()
+because without it we can't get the value of Object.
+If we won't declare ToString() then we will get only the hascode value of
+the objects.
+APP CLASS:
+Here we call service.FindAll() in SOP statement.It will go to the 
+findAll() method in EmployeeRepositaryImpl Class.
+here we have created a List of Eployee class .
+we have created the reference of List<Employee> 
+By the help of PreparedStatement we have written SELECT_ALL queries
+through thr con.prepareStatement();
+we used here SELECT statement then we have to write executequery()
+ResultSet contains the result of an executing Query
+THen we created while loop to check is there any next element then
+create the object of employee class and assigned it as ref.variablename
+=getInt("Column name in the table");
+then we added to the employee class.
+we have declared every method of EmployeeRepositaryImpl class in the 
+IEmployeeRepositary Interface.It's the beauty of interface ..
+IN service Class we are connected to the DATABASE .we call the save
+method here ..It will help to know the Employee Status as we printed here
+emp.id.currently number of Employee added in the databse we can see here
+we also added roll back() which will help undo the datas  of the database.
+we also connect the List<employee> to the database in service class
+And in connection class we gave user name password and url to connect to
+the database.And in EmployeeQueries class we wrote two Queries
+One for Inserting tha datas and one foe retriving the data by chhosing
+INSERT and SELECT statement Respectively
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
